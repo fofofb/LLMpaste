@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Combination Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Combination Tool</h1>
+        <button id="add-card-btn">Add New Card</button>
+        <button id="combine-text-btn">Combine Text</button>
+        <div id="cards-container">
+            <!-- Cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <template id="card-template">
+        <div class="card">
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-content">Card content...</p>
+            <button class="edit-btn">Edit</button>
+            <button class="copy-btn">Copy</button>
+            <button class="delete-btn">Delete</button>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

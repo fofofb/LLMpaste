@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#cards-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between cards */
+}
+
+.card {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    width: calc(33.333% - 40px); /* Adjust width for 3 cards per row, considering gap and padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    flex-grow: 1; /* Allows paragraph to take available space */
+}
+
+.card button {
+    background-color: #28a745; /* Green for edit */
+    margin-top: 10px;
+}
+
+.card button.delete-btn {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.card button.copy-btn {
+    background-color: #ffc107; /* Yellow for copy */
+    color: #333;
+}
+
+.card button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 30px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 card per row */
+    }
+}
+
+.selected-card {
+    border-color: #007bff; /* A distinct border color */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* A bit more visible glow */
+    border-width: 2px; /* Make border thicker */
+}
