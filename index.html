@@ -27,5 +27,20 @@
     </template>
 
     <script src="script.js"></script>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close-btn" class="close-button">&times;</span>
+            <h2>Edit Card</h2>
+            <label for="modal-title-input">Title:</label>
+            <input type="text" id="modal-title-input">
+            <label for="modal-content-textarea">Content:</label>
+            <textarea id="modal-content-textarea"></textarea>
+            <div class="modal-actions">
+                <button id="modal-save-btn">Save</button>
+                <button id="modal-cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
